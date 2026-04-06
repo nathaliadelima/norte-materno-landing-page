@@ -1,9 +1,11 @@
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #f8f6f3 0%, #f1eee9 100%);
@@ -23,17 +25,6 @@ body {
   margin: 0 auto;
 }
 
-.reality-box {
-  background: #f1eee9;
-  padding: 25px;
-  border-radius: 16px;
-  margin: 30px 0;
-}
-
-.break {
-  height: 20px;
-}
-
 .soft {
   color: #666;
 }
@@ -43,13 +34,7 @@ body {
   color: #6e8b74;
 }
 
-.reality-text {
-  padding: 80px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* HEADER */
+/* ===== HEADER ===== */
 .header {
   position: fixed;
   top: 0;
@@ -71,24 +56,7 @@ body {
   margin: 0;
 }
 
-/* HERO */
-
-.problem-flow p {
-  margin-bottom: 18px;
-}
-
-.problem-group {
-  background: #f8f6f3;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 25px 0;
-}
-
-.highlight-line {
-  font-weight: 600;
-  color: #6e8b74;
-}
-
+/* ===== HERO ===== */
 .hero {
   padding: 140px 20px 100px;
   background: linear-gradient(135deg, #f1eee9 0%, #e8e4dc 100%);
@@ -116,10 +84,6 @@ body {
   font-size: 1.25rem;
   margin-bottom: 40px;
   color: #444;
-}
-
-.soft {
-  color: #666;
 }
 
 .badge {
@@ -158,7 +122,7 @@ body {
   text-align: center;
 }
 
-/* BUTTONS */
+/* ===== BUTTONS ===== */
 .btn-primary {
   background: linear-gradient(135deg, #6e8b74, #5a7a5f);
   color: white;
@@ -197,7 +161,7 @@ body {
   width: 100%;
 }
 
-/* PROBLEM */
+/* ===== PROBLEM ===== */
 .problem {
   background: white;
   padding: 100px 20px;
@@ -223,7 +187,58 @@ body {
   margin-bottom: 16px;
 }
 
-/* SOLUTION */
+.problem-group {
+  background: #f8f6f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+/* ===== BLOCO HUMANO ===== */
+.human-block {
+  margin: 60px 0;
+  padding: 40px;
+  background: #f1eee9;
+  border-radius: 20px;
+}
+
+.human-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.human-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.human-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.human-highlight {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6e8b74;
+  margin-bottom: 15px;
+}
+
+.human-strong {
+  font-weight: 600;
+}
+
+/* ===== IMPACT LINE ===== */
+.impact-line {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 60px 0;
+  color: #6e8b74;
+}
+
+/* ===== SOLUTION ===== */
 .solution {
   padding: 100px 20px;
 }
@@ -245,18 +260,20 @@ body {
 }
 
 .method-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 60px;
+  flex-wrap: nowrap;
 }
 
 .method-card {
+  flex: 0 0 180px;
   background: white;
-  padding: 40px 25px;
+  padding: 30px 20px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 
@@ -279,7 +296,7 @@ body {
   margin: 0 auto 20px;
 }
 
-/* RESULTS */
+/* ===== RESULTS ===== */
 .results {
   padding: 100px 20px;
 }
@@ -310,7 +327,7 @@ body {
   color: black;
 }
 
-/* PRICING */
+/* ===== PRICING ===== */
 .pricing-box {
   background: white;
   padding: 50px;
@@ -356,22 +373,13 @@ body {
   text-align: center;
 }
 
-.final-price,
-.price,
-.btn-primary,
-.trust-final {
-  text-align: center;
-}
-
 /* ===== CTA FINAL ===== */
-
 .cta-final {
   padding: 80px 20px 40px;
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #f1eee9, #e8e4dc);
   border-top: 1px solid #ddd;
-
 }
 
 .cta-final .container {
@@ -383,26 +391,17 @@ body {
   text-align: center;
 }
 
-/* TEXTO PRINCIPAL */
 .cta-content h2 {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.9;
   color: #2e2e2e;
   white-space: pre-line;
-  /* mantém as quebras do teu texto */
   margin-bottom: 35px;
 }
 
-/* PREÇO */
 .final-price {
   margin: 30px 0 20px;
-}
-
-.price-decision {
-  margin: 25px 0;
-  font-size: 1rem;
-  color: #444;
 }
 
 .final-price .price {
@@ -411,7 +410,6 @@ body {
   color: #6e8b74;
 }
 
-/* BOTÃO */
 .btn-primary.btn-huge {
   display: inline-block;
   margin-top: 10px;
@@ -430,14 +428,13 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* TEXTO DE CONFIANÇA */
 .trust-final {
   margin-top: 15px;
   font-size: 0.9rem;
   color: #555;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 .footer {
   text-align: center;
   padding: 20px 10px 40px;
@@ -446,4 +443,25 @@ body {
 .footer p {
   font-size: 0.8rem;
   color: #888;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .method-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .method-card {
+    flex: 1 1 45%;
+  }
+
+  .human-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .human-text {
+    margin-top: 20px;
+  }
 }
