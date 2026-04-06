@@ -18,9 +18,29 @@ body {
   padding: 0 20px;
 }
 
-.narrow { 
-  max-width: 800px; 
+.narrow {
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.reality-box {
+  background: #f1eee9;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.break {
+  height: 20px;
+}
+
+.soft {
+  color: #666;
+}
+
+.highlight-line {
+  font-weight: 600;
+  color: #6e8b74;
 }
 
 .reality-text {
@@ -34,7 +54,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 15px 0;
@@ -46,12 +66,29 @@ body {
   align-items: center;
 }
 
-.logo { 
-  color: #6e8b74; 
+.logo {
+  color: #6e8b74;
   margin: 0;
 }
 
 /* HERO */
+
+.problem-flow p {
+  margin-bottom: 18px;
+}
+
+.problem-group {
+  background: #f8f6f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.highlight-line {
+  font-weight: 600;
+  color: #6e8b74;
+}
+
 .hero {
   padding: 140px 20px 100px;
   background: linear-gradient(135deg, #f1eee9 0%, #e8e4dc 100%);
@@ -71,8 +108,8 @@ body {
   margin-bottom: 30px;
 }
 
-.highlight { 
-  color: #6e8b74; 
+.highlight {
+  color: #6e8b74;
 }
 
 .hero-lead {
@@ -81,8 +118,8 @@ body {
   color: #444;
 }
 
-.soft { 
-  color: #666; 
+.soft {
+  color: #666;
 }
 
 .badge {
@@ -114,11 +151,11 @@ body {
   background: white;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.hero-cta { 
-  text-align: center; 
+.hero-cta {
+  text-align: center;
 }
 
 /* BUTTONS */
@@ -132,32 +169,32 @@ body {
   font-size: 1.1rem;
   display: inline-block;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(110,139,116,0.3);
+  box-shadow: 0 10px 30px rgba(110, 139, 116, 0.3);
   text-align: center;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 40px rgba(110,139,116,0.4);
+  box-shadow: 0 15px 40px rgba(110, 139, 116, 0.4);
 }
 
-.btn-large { 
-  padding: 22px 44px; 
-  font-size: 1.2rem; 
+.btn-large {
+  padding: 22px 44px;
+  font-size: 1.2rem;
 }
 
-.btn-small { 
-  padding: 12px 24px; 
-  font-size: 0.95rem; 
+.btn-small {
+  padding: 12px 24px;
+  font-size: 0.95rem;
 }
 
-.btn-huge { 
-  padding: 24px 60px; 
-  font-size: 1.3rem; 
+.btn-huge {
+  padding: 24px 60px;
+  font-size: 1.3rem;
 }
 
-.full-width { 
-  width: 100%; 
+.full-width {
+  width: 100%;
 }
 
 /* PROBLEM */
@@ -219,13 +256,13 @@ body {
   padding: 40px 25px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .method-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .method-icon {
@@ -258,14 +295,14 @@ body {
   background: white;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.stars { 
-  color: #f39c12; 
-  font-size: 1.5rem; 
-  margin-bottom: 20px; 
+.stars {
+  color: #f39c12;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .author {
@@ -278,7 +315,7 @@ body {
   background: white;
   padding: 50px;
   border-radius: 24px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
   text-align: center;
   max-width: 500px;
   margin: 60px auto;
@@ -319,7 +356,10 @@ body {
   text-align: center;
 }
 
-.final-price, .price, .btn-primary, .trust-final {
+.final-price,
+.price,
+.btn-primary,
+.trust-final {
   text-align: center;
 }
 
@@ -329,6 +369,9 @@ body {
   padding: 80px 20px 40px;
   display: flex;
   justify-content: center;
+  background: linear-gradient(135deg, #f1eee9, #e8e4dc);
+  border-top: 1px solid #ddd;
+
 }
 
 .cta-final .container {
@@ -346,13 +389,20 @@ body {
   font-weight: 400;
   line-height: 1.9;
   color: #2e2e2e;
-  white-space: pre-line; /* mantém as quebras do teu texto */
+  white-space: pre-line;
+  /* mantém as quebras do teu texto */
   margin-bottom: 35px;
 }
 
 /* PREÇO */
 .final-price {
   margin: 30px 0 20px;
+}
+
+.price-decision {
+  margin: 25px 0;
+  font-size: 1rem;
+  color: #444;
 }
 
 .final-price .price {
