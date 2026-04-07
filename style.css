@@ -475,8 +475,27 @@ body {
   color: #888;
 }
 
+
 /* ===== RESPONSIVO ===== */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
+
+  html, body {
+  overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .hero-grid {
+    width: 100%;
+  }
+  
+  section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
   .method-grid {
     flex-wrap: wrap;
     justify-content: center;
@@ -517,5 +536,11 @@ body {
   .hero-lead {
     font-size: 1rem;
   }
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 }
