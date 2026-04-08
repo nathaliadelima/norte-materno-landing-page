@@ -1,5 +1,7 @@
 /* ===== RESET ===== */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,6 +34,10 @@ body {
 .highlight-line {
   font-weight: 600;
   color: #6e8b74;
+}
+
+.mobile-break {
+  display: none;
 }
 
 /* ===== HEADER ===== */
@@ -128,6 +134,16 @@ body {
   text-align: center;
 }
 
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  max-width: 380px;
+  margin: 12px auto 0;
+}
+
 /* ===== BUTTONS ===== */
 .btn-primary {
   background: linear-gradient(135deg, #6e8b74, #5a7a5f);
@@ -170,7 +186,7 @@ body {
 /* ===== PROBLEM ===== */
 .problem {
   background: white;
-  padding: 100px 20px;
+  padding: 60px 20px 40px;
 }
 
 .section-header {
@@ -236,7 +252,7 @@ body {
   font-weight: 600;
 }
 
-/* ===== IMPACT LINE ===== */
+/* ===== IMPACT ===== */
 .impact-line {
   text-align: center;
   font-size: 1.3rem;
@@ -245,7 +261,7 @@ body {
 
 /* ===== SOLUTION ===== */
 .solution {
-  padding: 100px 20px;
+  padding: 60px 20px 40px;
 }
 
 .solution.soft-bg {
@@ -279,7 +295,6 @@ body {
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
 .method-card:hover {
@@ -317,8 +332,8 @@ body {
   background: white;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .stars {
@@ -337,10 +352,10 @@ body {
   background: white;
   padding: 50px;
   border-radius: 24px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
   text-align: center;
   max-width: 500px;
   margin: 60px auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
 
 .current-price {
@@ -396,15 +411,6 @@ body {
   text-align: center;
 }
 
-.cta-content h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.8;
-  color: #2e2e2e;
-  white-space: pre-line;
-  margin-bottom: 35px;
-}
-
 .cta-text {
   display: flex;
   flex-direction: column;
@@ -418,21 +424,15 @@ body {
   border-radius: 12px;
   line-height: 1.7;
   font-size: 1.05rem;
-  color: #2e2e2e;
   text-align: center;
-  text-wrap: balance;
   max-width: 600px;
   margin: 0 auto;
 }
 
-
 .cta-strong {
   background: #e8e4dc;
-  /* tom suave do teu site */
   color: #6e8b74;
-  /* tua cor principal */
   font-weight: 600;
-  text-align: center;
   border: 2px solid #6e8b74;
   font-size: 1.1rem;
 }
@@ -445,24 +445,6 @@ body {
   font-size: 2.6rem;
   font-weight: 600;
   color: #6e8b74;
-}
-
-.btn-primary.btn-huge {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 18px 36px;
-  background: #6e8b74;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-primary.btn-huge:hover {
-  background: #5a7460;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .trust-final {
@@ -482,46 +464,26 @@ body {
   color: #888;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* ===== RESPONSIVO ===== */
 @media (max-width: 667px) {
 
-  html, body {
-  overflow-x: hidden;
-}
-
-  .method-grid {
-    flex-wrap: wrap;
-    justify-content: center;
+  html,
+  body {
+    overflow-x: hidden;
   }
 
-  .method-card {
-    flex: 1 1 100%;
+  .container {
+    padding: 0 12px;
   }
 
-  .human-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .human-text {
-    margin-top: 20px;
-  }
-
-  .cta-text p {
-    margin: 0 !important;
-    font-size: 1rem;
+  .hero {
+    padding: 120px 16px 60px;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 30px; /* opcional, só pra dar respiro bonito */
+    gap: 30px;
   }
 
   .hero-stats {
@@ -537,12 +499,57 @@ body {
     font-size: 1rem;
   }
 
-  .hero {
-    padding: 120px 16px 60px;
+  .method-grid {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .container {
-    padding: 0 12px;
+  .method-card {
+    flex: 1 1 100%;
   }
 
+  .human-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .human-text {
+    display: contents;
+  }
+
+  .human-highlight {
+    order: 1;
+  }
+
+  .human-image {
+    order: 2;
+  }
+
+  .human-text p:not(.human-highlight) {
+    order: 3;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+  }
+
+  .current-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .original-price {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .final-price .price {
+    white-space: nowrap;
+    text-align: center;
+  }
 }
