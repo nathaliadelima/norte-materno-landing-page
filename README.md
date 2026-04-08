@@ -52,3 +52,11 @@ Este projeto foi desenvolvido com foco em:
 ## 🚀 Status
 
 Em desenvolvimento / ajustes contínuos
+
+---
+
+## Link do projeto
+https://nathaliadelima.github.io/norte-materno-landing-page/
+
+## Link dos códigos
+https://github.com/nathaliadelima/norte-materno-landing-page
