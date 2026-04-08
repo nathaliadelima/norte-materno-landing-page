@@ -55,8 +55,8 @@ Em desenvolvimento / ajustes contínuos
 
 ---
 
-## Link do projeto
+## 🔗 Link do projeto
 https://nathaliadelima.github.io/norte-materno-landing-page/
 
-## Link dos códigos
+## 🔗 Link dos códigos
 https://github.com/nathaliadelima/norte-materno-landing-page
